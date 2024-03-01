@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="main_section">
+        <section class="side_nav_section">
+                <div class="sidebar_container">
+                    <div class="logo_container">
+                        <svg width="35" height="21" viewBox="0 0 35 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.02 0C12.482 0 9.644 2.286 8.51 6.857C10.212 4.572 12.197 3.714 14.467 4.287C15.763 4.612 16.687 5.558 17.712 6.605C19.38 8.311 21.312 10.286 25.531 10.286C30.07 10.286 32.907 8 34.041 3.429C32.34 5.715 30.354 6.572 28.084 6C26.79 5.675 25.864 4.728 24.839 3.68C23.171 1.975 21.239 0 17.02 0ZM8.51 10.286C3.971 10.286 1.134 12.572 0 17.143C1.701 14.857 3.687 14 5.957 14.572C7.251 14.897 8.177 15.844 9.202 16.892C10.87 18.597 12.802 20.572 17.02 20.572C21.56 20.572 24.397 18.286 25.531 13.715C23.829 16.001 21.843 16.858 19.574 16.286C18.279 15.96 17.354 15.014 16.329 13.966C14.66 12.261 12.73 10.286 8.51 10.286Z" fill="#4338CA"/>
+                            </svg>
+                    </div>
+                    <div class="main_upper_container">
+                        <div class="upper_sidebar_container">
+                            <div class="upper_conatiner_icon_with_side_number">
+                                <div class="icon_and_title_conatainer">
+                                   <div class="side_nav_icon_container">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.25 12.0001L11.204 3.04507C11.644 2.60607 12.356 2.60607 12.795 3.04507L21.75 12.0001M4.5 9.75007V19.8751C4.5 20.4961 5.004 21.0001 5.625 21.0001H9.75V16.1251C9.75 15.5041 10.254 15.0001 10.875 15.0001H13.125C13.746 15.0001 14.25 15.5041 14.25 16.1251V21.0001H18.375C18.996 21.0001 19.5 20.4961 19.5 19.8751V9.75007M8.25 21.0001H16.5" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+    
+                                   </div> 
+                                   <div class="title_conatiner">
+                                    <p>Dashboard</p>
+                                   </div>
+                                </div>
+                                
+                                <div class="side_number_icon">
+                                    <p>5</p>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="upper_sidebar_container">
+                            <div class="upper_conatiner_icon_with_side_number">
+                                <div class="icon_and_title_conatainer">
+                                   <div class="side_nav_icon_container">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 19.128C15.853 19.3757 16.7368 19.5009 17.625 19.5C19.0534 19.5021 20.4633 19.1764 21.746 18.548C21.7839 17.6517 21.5286 16.7675 21.0188 16.0293C20.509 15.2912 19.7724 14.7394 18.9207 14.4575C18.0691 14.1757 17.1487 14.1791 16.2992 14.4674C15.4497 14.7557 14.7173 15.313 14.213 16.055M15 19.128V19.125C15 18.012 14.714 16.965 14.213 16.055M15 19.128V19.234C13.0755 20.3931 10.8706 21.0038 8.62402 21C6.29302 21 4.11202 20.355 2.25002 19.234L2.24902 19.125C2.24826 17.7095 2.71864 16.3339 3.58601 15.2153C4.45338 14.0966 5.6684 13.2984 7.03951 12.9466C8.41063 12.5948 9.85985 12.7093 11.1587 13.2721C12.4575 13.8349 13.5321 14.814 14.213 16.055M12 6.375C12 7.27011 11.6444 8.12855 11.0115 8.76149C10.3786 9.39442 9.52013 9.75 8.62502 9.75C7.72992 9.75 6.87147 9.39442 6.23854 8.76149C5.6056 8.12855 5.25002 7.27011 5.25002 6.375C5.25002 5.47989 5.6056 4.62145 6.23854 3.98851C6.87147 3.35558 7.72992 3 8.62502 3C9.52013 3 10.3786 3.35558 11.0115 3.98851C11.6444 4.62145 12 5.47989 12 6.375ZM20.25 8.625C20.25 9.32119 19.9735 9.98887 19.4812 10.4812C18.9889 10.9734 18.3212 11.25 17.625 11.25C16.9288 11.25 16.2612 10.9734 15.7689 10.4812C15.2766 9.98887 15 9.32119 15 8.625C15 7.92881 15.2766 7.26113 15.7689 6.76884C16.2612 6.27656 16.9288 6 17.625 6C18.3212 6 18.9889 6.27656 19.4812 6.76884C19.9735 7.26113 20.25 7.92881 20.25 8.625Z" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+    
+                                   </div> 
+                                   <div class="title_conatiner">
+                                    <p>Team</p>
+                                   </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="upper_sidebar_container">
+                            <div class="upper_conatiner_icon_with_side_number_project">
+                                <div class="icon_and_title_conatainer">
+                                   <div class="side_nav_icon_container">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.25 12.75V12C2.25 11.4033 2.48705 10.831 2.90901 10.409C3.33097 9.98705 3.90326 9.75 4.5 9.75H19.5C20.0967 9.75 20.669 9.98705 21.091 10.409C21.5129 10.831 21.75 11.4033 21.75 12V12.75M13.06 6.31L10.94 4.19C10.8007 4.05055 10.6353 3.93992 10.4533 3.86442C10.2712 3.78892 10.0761 3.75004 9.879 3.75H4.5C3.90326 3.75 3.33097 3.98705 2.90901 4.40901C2.48705 4.83097 2.25 5.40326 2.25 6V18C2.25 18.5967 2.48705 19.169 2.90901 19.591C3.33097 20.0129 3.90326 20.25 4.5 20.25H19.5C20.0967 20.25 20.669 20.0129 21.091 19.591C21.5129 19.169 21.75 18.5967 21.75 18V9C21.75 8.40326 21.5129 7.83097 21.091 7.40901C20.669 6.98705 20.0967 6.75 19.5 6.75H14.121C13.7233 6.74965 13.341 6.59138 13.06 6.31Z" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+    
+                                   </div> 
+                                   <div class="title_conatiner">
+                                    <p>Projects</p>
+                                   </div>
+                                </div>
+                                
+                                <div class="side_number_icon">
+                                    <p>12</p>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="upper_sidebar_container">
+                            <div class="upper_conatiner_icon_with_side_number_calender">
+                                <div class="icon_and_title_conatainer">
+                                   <div class="side_nav_icon_container">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.75 3V5.25M17.25 3V5.25M3 18.75V7.5C3 6.90326 3.23705 6.33097 3.65901 5.90901C4.08097 5.48705 4.65326 5.25 5.25 5.25H18.75C19.3467 5.25 19.919 5.48705 20.341 5.90901C20.7629 6.33097 21 6.90326 21 7.5V18.75M3 18.75C3 19.3467 3.23705 19.919 3.65901 20.341C4.08097 20.7629 4.65326 21 5.25 21H18.75C19.3467 21 19.919 20.7629 20.341 20.341C20.7629 19.919 21 19.3467 21 18.75M3 18.75V11.25C3 10.6533 3.23705 10.081 3.65901 9.65901C4.08097 9.23705 4.65326 9 5.25 9H18.75C19.3467 9 19.919 9.23705 20.341 9.65901C20.7629 10.081 21 10.6533 21 11.25V18.75" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+    
+                                   </div> 
+                                   <div class="title_conatiner">
+                                    <p>Calender</p>
+                                   </div>
+                                </div>
+                                
+                                <div class="side_number_icon">
+                                    <p>20+</p>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="upper_sidebar_container">
+                            <div class="upper_conatiner_icon_with_side_number">
+                                <div class="icon_and_title_conatainer">
+                                   <div class="side_nav_icon_container">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.75 17.25V20.625C15.75 21.246 15.246 21.75 14.625 21.75H4.875C4.57663 21.75 4.29048 21.6315 4.0795 21.4205C3.86853 21.2095 3.75 20.9234 3.75 20.625V7.875C3.75 7.254 4.254 6.75 4.875 6.75H6.75C7.25257 6.74966 7.7543 6.79114 8.25 6.874M15.75 17.25H19.125C19.746 17.25 20.25 16.746 20.25 16.125V11.25C20.25 6.79 17.007 3.089 12.75 2.374C12.2543 2.29114 11.7526 2.24966 11.25 2.25H9.375C8.754 2.25 8.25 2.754 8.25 3.375V6.874M15.75 17.25H9.375C9.07663 17.25 8.79048 17.1315 8.5795 16.9205C8.36853 16.7095 8.25 16.4234 8.25 16.125V6.874M20.25 13.5V11.625C20.25 10.7299 19.8944 9.87145 19.2615 9.23852C18.6286 8.60558 17.7701 8.25 16.875 8.25H15.375C15.0766 8.25 14.7905 8.13148 14.5795 7.9205C14.3685 7.70952 14.25 7.42337 14.25 7.125V5.625C14.25 5.18179 14.1627 4.74292 13.9931 4.33345C13.8235 3.92397 13.5749 3.55191 13.2615 3.23852C12.9481 2.92512 12.576 2.67652 12.1666 2.50691C11.7571 2.3373 11.3182 2.25 10.875 2.25H9.75" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+    
+                                   </div> 
+                                   <div class="title_conatiner">
+                                    <p>Documents</p>
+                                   </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="upper_sidebar_container">
+                            <div class="upper_conatiner_icon_with_side_number">
+                                <div class="icon_and_title_conatainer">
+                                   <div class="side_nav_icon_container">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.5 6C9.01664 6 7.5666 6.43987 6.33323 7.26398C5.09986 8.08809 4.13856 9.25943 3.57091 10.6299C3.00325 12.0003 2.85472 13.5083 3.14411 14.9632C3.4335 16.418 4.14781 17.7544 5.1967 18.8033C6.2456 19.8522 7.58197 20.5665 9.03683 20.8559C10.4917 21.1453 11.9997 20.9968 13.3701 20.4291C14.7406 19.8614 15.9119 18.9001 16.736 17.6668C17.5601 16.4334 18 14.9834 18 13.5H10.5V6Z" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13.5 10.5H21C21 8.51088 20.2098 6.60322 18.8033 5.1967C17.3968 3.79018 15.4891 3 13.5 3V10.5Z" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+    
+                                   </div> 
+                                   <div class="title_conatiner">
+                                    <p>Reports</p>
+                                   </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="middle_sidebar_container">
+                        <div class="your_teams_conatiner">
+                            <p>Your teams</p>
+                        </div>
+                        
+                        <div class="middle_sidebar_icon_container">
+                                <div 
+                                class="middle_sidebar_icon">
+                                    <i class="fa-solid fa-h"></i><p>Heroicons</p>  
+                                </div>
+                           
+                            <div class="middle_sidebar_icon">
+                                <i class="fa-solid fa-t"></i>
+                                <p>Tailwind Labs</p>
+                            </div>
+                            <div class="middle_sidebar_icon">
+                                <i class="fa-solid fa-w"></i>
+                                <p>Workcation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lower_sidebar_container">
+                        <div class="lower_sidebar_icon">
+                            <img src="./images/passport.png" alt="logo">
+                        </div> 
+                           <div class="lower_sidebar_title">
+                            <p>Sandy Abasman</p>
+                           </div>
+    
+                    </div>
+                </div>
+    
+        </section>
+    
+        <section class="body_section">  
+            <div class="stats_body_section">
+    
+                <div class="stats_section_container">
+                    <div class="upper_conatiner">
+                        <h1>Last 30 days</h1>
+                    </div>
+                    <div class="lower_container">
+                        <div class="first_lower_conatiner">
+                            <div class="details_conatiner">
+                                <div  class="icon_container">
+                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="axp brs oc se ur"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"></path></svg>
+
+                                </div>
+                                <div class="subscribers_stats_container">
+                                <div class="total_subcribers_conatiner">
+                                        <p>Total Subscribers</p>
+                                </div>
+                                    <div class="subcribers_count_container">
+                                        <div class="number_count_container">
+                                            <p>71,897</p>
+                                        </div>
+                                        <div class="increase_count_container"><i class="fa fa-long-arrow-up" aria-hidden="true"></i><p>122</p></div>
+                                    </div>
+                                </div>
+        
+                            </div>
+                            
+                            <div class="view_all_container">
+                                <a href="#"><p> View all </p></a>
+                            </div>
+                              
+                    </div>
+                        <div class="first_lower_conatiner">
+                            <div class="details_conatiner">
+                                <div  class="icon_container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" aria-hidden="true" class="oc se bah"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 9v.906a2.25 2.25 0 01-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 001.183 1.981l6.478 3.488m8.839 2.51l-4.66-2.51m0 0l-1.023-.55a2.25 2.25 0 00-2.134 0l-1.022.55m0 0l-4.661 2.51m16.5 1.615a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V8.844a2.25 2.25 0 011.183-1.98l7.5-4.04a2.25 2.25 0 012.134 0l7.5 4.04a2.25 2.25 0 011.183 1.98V19.5z"></path></svg>
+                                </div>
+                                <div class="subscribers_stats_container">
+                                <div class="total_subcribers_conatiner">
+                                        <p>Total Subscribers</p>
+                                </div>
+                                    <div class="subcribers_count_container">
+                                        <div class="number_count_container">
+                                            <p>58.16%</p>
+                                        </div>
+                                        <div class="increase_count_container"><i class="fa fa-long-arrow-up" aria-hidden="true"></i><p>5.4%</p></div>
+                                    </div>
+                                </div>
+        
+                            </div>
+                            
+                            <div class="view_all_container">
+                                <a href="#"><p> View all </p></a>
+                            </div>
+                              
+                    </div>
+                        <div class="first_lower_conatiner">
+                            <div class="details_conatiner">
+                                <div  class="icon_container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" aria-hidden="true" class="oc se bah"><path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59"></path></svg>
+                                </div>
+                                <div class="subscribers_stats_container">
+                                <div class="total_subcribers_conatiner">
+                                        <p>Total Subscribers</p>
+                                </div>
+                                    <div class="subcribers_count_container">
+                                        <div class="number_count_container">
+                                            <p>24.57%
+                                            </p>
+                                        </div>
+                                        <div class="increase_count_container_3"> <i class="fa fa-long-arrow-down" aria-hidden="true"></i><p>3.2%</p></div>
+                                    </div>
+                                </div>
+        
+                            </div>
+                            
+                            <div class="view_all_container">
+                                <a href="#"><p> View all </p></a>
+                            </div>
+                              
+                    </div>
+                        
+                </div>
+        
+            </div>
+            
+            </div>
+
+            <div class="table_container">
+                <div class="upper_table">
+                    <div class="table_heading_text">
+                        <h2>Users</h2>
+                        <p>A list of all the users in your account including their name, title, email and role </p>
+                    </div>
+    
+                    <div class="table_button">
+                       <button><a class="table_buttona" href="#">Add User</a></button>
+                    </div>
+                </div>
+               <table class="table_display">
+               <tr class="heading">
+                <th>Name</th>
+                <th>Title</th>
+                <th>Status</th>
+                <th>Role</th>
+                <th></th>
+               </tr> 
+               <tr class="details">
+                <td class="table_detail"> 
+                    <div class="table_icon_container">
+                    <div class="image_thumbline">
+                        <img src="./images/Linsday.png" alt="icon_image">
+                    </div>
+                </div>
+                  <p class="row_detail_1"> Lindsay Walton <span>lindsay.walton@example.com</span></p></td>
+                <td><span class=" title_1"> Front-end Developer<span>Optimization</span></span></td></td>
+                <td><div class="active">
+                    Active</div></td>
+                <td  class="member">Member</td>
+                <td class="edit"> <a href="#">Edit</a></td>
+               </tr>
+               <tr class="details">
+                <td class="table_detail"> 
+                    <div class="table_icon_container">
+                    <div class="image_thumbline">
+                        <img src="./images/courtney.png" alt="icon_image">
+                    </div>
+                </div>
+                  <p class="row_detail_1"> Courtney Henry <span>courtney.henry@example.com</span></p></td>
+                <td><span class=" title_1"> Designer<span>Intranet</span></span></td></td>
+                <td><div class="active">
+                    Active</div></td>
+                <td  class="member">Admin</td>
+                <td class="edit"> <a href="#">Edit</a></td>
+               </tr>
+               <tr class="details">
+                <td class="table_detail"> 
+                    <div class="table_icon_container">
+                    <div class="image_thumbline">
+                        <img src="./images/tom.png" alt="icon_image">
+                    </div>
+                </div>
+                  <p class="row_detail_1"> Tom Cook<span>tom.cook@example.com</span></p></td>
+                <td><span class=" title_1"> Director of Product<span>Directives</span></span></td></td>
+                <td><div class="active">
+                    Active</div></td>
+                <td  class="member">Member</td>
+                <td class="edit"> <a href="#">Edit</a></td>
+               </tr>
+               <tr class="details">
+                <td class="table_detail"> 
+                    <div class="table_icon_container">
+                    <div class="image_thumbline">
+                        <img src="./images/whitney.png" alt="icon_image">
+                    </div>
+                </div>
+                  <p class="row_detail_1">
+                    Whitney Francis<span>whitney.francis@example.com</span></p></td>
+                <td><span class=" title_1"> 	
+                    Copywriter<span>Program</span></span></td></td>
+                <td><div class="active">
+                    Active</div></td>
+                <td  class="member">Admin</td>
+                <td class="edit"> <a href="#">Edit</a></td>
+               </tr>
+               <tr class="details">
+                <td class="table_detail"> 
+                    <div class="table_icon_container">
+                    <div class="image_thumbline">
+                        <img src="./images/leonard.png" alt="icon_image">
+                    </div>
+                </div>
+                  <p class="row_detail_1"> Leonard Krasner <span>leonard.krasner@example.com</span></p></td>
+                <td><span class=" title_1"> Senior Designer<span>Mobility</span></span></td></td>
+                <td><div class="active">
+                    Active</div></td>
+                <td  class="member">Owner</td>
+                <td class="edit"> <a href="#">Edit</a></td>
+               </tr>
+               <tr class="details">
+                <td class="table_detail"> 
+                    <div class="table_icon_container">
+                    <div class="image_thumbline">
+                        <img src="./images/floyd.png" alt="icon_image">
+                    </div>
+                </div>
+                  <p class="row_detail_1">Floyd Miles<span>floyd.miles@example.com</span></p></td>
+                <td><span class=" title_1"> Principal Designer<span>Security</span></span></td></td>
+                <td><div class="active">
+                    Active</div></td>
+                <td  class="member">Member</td>
+                <td class="edit"> <a href="#">Edit</a></td>
+               </tr>
+               
+               </table>
+            </div>
+    
+    
+        </section>
+
+        </section>
+
+    </section>
+    
+</body>
+</html>
